@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-dark" >
+                <div class="row text-white">
+                    <div class="col-md-12 my-3 fs-2">
+                        <span><i class="fa-regular fa-circle-user pe-2"></i>Admin</span>
+
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <div class="border-top border-bottom border-info py-3">
+                            <img style="width: 50px; height: 50px" class="rounded-circle"
+                                src="https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-anh-hacker.jpg"
+                                alt="..." />
+                            <span class="ps-2">Nguyễn Thiện Nghiệp</span>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <div class="input-group">
+                            <input class="form-control p-3" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn bg-success input-group-text p-3" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <button class="d-flex w-100  border border-primary rounded p-3 justify-content-between">
+                            <span><i class="fa-solid fa-gauge pe-2"></i>Trang chủ</span>
+                            <span><i class="fa-solid fa-arrow-left"></i></span>
+                        </button>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <div class="btn-group w-100">
+                            <button class="btn btn-primary text-white d-flex justify-content-start justify-content-between p-3 border border-primary rounded" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <span><i class="fa-solid fa-chart-pie pe-2"></i>Quản lý sản phẩm</span>
+                                <span><i class="fa-solid fa-arrow-down"></i></span>
+                            </button>
+                            <ul class="dropdown-menu w-100 bg-dark" aria-labelledby="dropdownMenuClickableInside">
+                              <li class="border bg-light  rounded mb-2">
+                                <div class="col-md-12">
+                                    <div class="p-3">
+                                        <input class="form-check-input" type="radio" name="addtext" id="addtext" />
+                                        <label class="form-check-label ps-2" for="addtext">
+                                            Thêm mới
+                                        </label>
+                                    </div>
+                                </div>
+                              </li>
+
+                              <li class="border bg-light  rounded">
+                                <div class="col-md-12">
+                                    <div class="p-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                        <label class="form-check-label ps-2" for="flexRadioDefault1">
+                                            Danh sách
+                                        </label>
+                                    </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+    
+
+                    <div class="col-md-12 mb-3">
+                        <button class="d-flex w-100 border border-primary rounded p-3 justify-content-between">
+                            <span><i class="fa-solid fa-user-plus me-2"></i></i>Quản lý người dùng</span>
+                            <span><i class="fa-solid fa-arrow-left"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 ">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                    <div class="container-fluid">
+                        <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="fa-solid fa-bars"></i></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item ps-4">
+                                    <a class="nav-link" aria-current="page" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item ps-4">
+                                    <a class="nav-link" href="#">Đăng xuất</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <button class="btn" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="d-flex justify-content-between mt-3 align-items-center">
+                    <span class="fs-2">Thêm sản phẩm mới</span>
+                    <span>Trang chủ</span>
+                </div>
+
+                <div class="mt-2 d-flex justify-content-between">
+                    <div class=" bg-light left border rounded me-4 w-100">
+                        <div class="header  p-3 border-bottom">
+                            <span>Thông tin sản phẩm</span>
+                        </div>
+
+                        <div class="p-3">
+                            <div>
+                                <label for="exampleFormControlInput1" class="form-label">Tên sản phẩm(*)</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div>
+                                <label for="exampleFormControlTextarea1" class="form-label pt-2">Mô tả ngắn(*)</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+
+                            <div>
+                                <div class="pt-2">Mô tả ngắn(*)</div>
+                                <textarea class="form-control" id="editor" rows="2"></textarea>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="right w-50">
+                        <div class="bg-light border rounded ">
+                            <div class="header  p-3 border-bottom">
+                                <span>Thể loại sản phẩm</span>
+                            </div>
+
+                            <div class="p-3">
+                                <select class="form-select"   aria-label="Default select example">
+                                    <option selected>Số điện thoại</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class=" mt-3 bg-light border rounded">
+                            <div class="header p-3 border-bottom">
+                                <span>Ảnh đại diện</span>
+                            </div>
+
+                            <div class="p-3">
+                                <div>
+                                    <label for="exampleFormControlInput1" class="form-label">Chọn ảnh(*)</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                                    <div class="pt-2">Định dạng: jpg, png, svg - kích cỡ  < 2mb </span>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Choose file" aria-label="Recipient's username with two button addons">
+                                        <label class="btn-defaul btn bg-secondary">
+                                            Browse <input type="file" hidden>
+                                        </label>
+                                        <label class="btn btn-defaul border-start bg-secondary">
+                                            Upload <input type="file" hidden>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="mx-3 bg-success">
+                            <button class="btn btn-primary" type="submit">Lưu</button>
+                            <button class="btn btn-secondary" type="reset">Hủy</button>
+                        </div> -->
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn col-5 btn-primary" type="submit">Lưu</button>
+                        <button class="btn  col-2 btn-secondary" type="reset">Hủy</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between">
+                    <div class=" bg-light left border rounded  me-4 mt-3 w-100">
+                        <div class="header  p-3 border-bottom">
+                            <span>Dữ liệu sản phẩm</span>
+                        </div>
+
+                        <div class="p-3">
+                            <form class="row g-3">
+                                <div class="col-3">
+                                  <label for="staticEmail2" class="visually-hidden">Giá bán(*) VNĐ</label>
+                                  <input type="text" readonly class="form-control-plaintext w-100"  id="staticEmail2" value="Giá bán(*) VNĐ">
+                                </div>
+                                <div class="col-8">
+                                  <label for="inputPassword2" class="visually-hidden">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword2" >
+                                </div>
+                            </form>
+
+                            <form class="row g-3 pt-2">
+                                <div class="col-3">
+                                  <label for="staticEmail2" class="">Trạng thái(*)</label>
+                                  <input type="text" readonly class="form-control-plaintext w-100"  id="staticEmail2" value="">
+                                </div>
+                                <div class="col-8">
+                                  <label for="inputPassword2" class="visually-hidden">Password</label>
+                                  
+                                  <select class="form-select" id="inputPassword2"   aria-label="Default select example">
+                                    <option selected>Mới</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="right w-50"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script>
+        ClassicEditor
+                .create( document.querySelector( '#editor' ) )
+                .then( editor => {
+                        console.log( editor );
+                } )
+                .catch( error => {
+                        console.error( error );
+                } );
+
+    </script>
+</body>
+
+</html>
